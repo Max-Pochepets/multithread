@@ -11,12 +11,12 @@ public class MyRunnable implements Runnable {
 
     @Override
     public void run() {
-            logger.info("MyRunnable thread started...\n");
-            while (counter.getCounter() < MAX_COUNT) {
-                logger.info(Thread.currentThread().getName() + " value = "
-                        + counter.getCounter() + "\n");
-                counter.increment();
-            }
-            logger.info("MyRunnable finished.\n");
+        logger.info("MyRunnable thread started...\n");
+        while (counter.getCounter() < MAX_COUNT) {
+            logger.info(Thread.currentThread().getName() + " value = "
+                    + counter.getCounter() + "\n");
+            counter.increment();
+        }
+        logger.info("MyRunnable finished.\n");
     }
 }
