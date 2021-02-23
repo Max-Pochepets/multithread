@@ -5,10 +5,6 @@ public class Counter {
         return counter;
     }
 
-    public void setCounter(int counter) {
-        this.counter = counter;
-    }
-
     public void increment() {
         this.counter++;
     }
